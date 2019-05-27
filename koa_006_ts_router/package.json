@@ -1,10 +1,13 @@
 {
-  "name": "koa_002_extract_server",
+  "name": "koa_006_ts_router",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:js": "tsc",
+    "start": "node ./dist/bootstrap.js",
+    "dev": "ts-node ./src/bootstrap.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@types/koa": "^2.0.48",
     "@types/koa-router": "^7.0.40",
+    "ts-node": "^8.2.0",
     "typescript": "^3.4.5"
   }
 }
