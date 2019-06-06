@@ -1,5 +1,5 @@
 {
-  "name": "koa_007_routing-controllers",
+  "name": "koa_021_type_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,8 @@
     "koa-multer": "^1.0.2",
     "koa-router": "^7.4.0",
     "reflect-metadata": "^0.1.13",
-    "routing-controllers": "^0.7.7"
+    "routing-controllers": "^0.7.7",
+    "typedi": "^0.8.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",

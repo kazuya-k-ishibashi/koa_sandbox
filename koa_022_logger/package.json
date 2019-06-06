@@ -1,5 +1,5 @@
 {
-  "name": "koa_007_routing-controllers",
+  "name": "koa_022_logger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,8 +18,10 @@
     "koa-json": "^2.0.2",
     "koa-multer": "^1.0.2",
     "koa-router": "^7.4.0",
+    "log4js": "^4.3.1",
     "reflect-metadata": "^0.1.13",
-    "routing-controllers": "^0.7.7"
+    "routing-controllers": "^0.7.7",
+    "typedi": "^0.8.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",
@@ -27,6 +29,7 @@
     "@types/koa-json": "^2.0.18",
     "@types/koa-multer": "^1.0.0",
     "@types/koa-router": "^7.0.40",
+    "@types/log4js": "^2.3.5",
     "ts-node": "^8.2.0",
     "ttypescript": "^1.5.6",
     "typescript": "^3.5.1",

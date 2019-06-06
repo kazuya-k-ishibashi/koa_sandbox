@@ -9,13 +9,16 @@ export default class UserService {
   private userRepository: UserRepository
 
   private constructor() {
+    console.log('UserService#constructor()')
     this.userRepository = UserRepository.getInstance()
   }
 
   static getInstance(): UserService {
-    if (this._instance == null) {
+    console.log('UserService#getInstance()')
+    if (!this._instance) {
       this._instance = new UserService()
     }
+    console.log('UserService: ', this._instance)
     return this._instance
   }
 

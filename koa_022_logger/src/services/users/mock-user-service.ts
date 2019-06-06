@@ -3,7 +3,7 @@ import UserRepository from '@/repositories/users/user-repository'
 
 
 @Service()
-export default class UserService {
+export default class MockUserService {
 
   constructor(
       private readonly userRepository: UserRepository) {

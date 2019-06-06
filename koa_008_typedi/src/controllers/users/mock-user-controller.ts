@@ -3,7 +3,7 @@ import UserService from '@/services/users/user-service'
 
 
 @JsonController('/users')
-export default class UserController {
+export default class MockUserController {
 
   constructor(
       private readonly userService: UserService) {
@@ -11,7 +11,11 @@ export default class UserController {
 
   @Get()
   findAll() {
-    return this.userService.findAll()
+    return [
+      { id: '987', name: 'mock1' },
+      { id: '876', name: 'mock2' },
+      { id: '765', name: 'mock3' },
+    ]
   }
 
   @Get('/:id')

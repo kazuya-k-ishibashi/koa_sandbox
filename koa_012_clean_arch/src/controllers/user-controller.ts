@@ -10,13 +10,16 @@ export default class UserController {
   private userService: UserService
 
   private constructor() {
+    console.log('UserController#constructor()')
     this.userService = UserService.getInstance()
   }
 
   static getInstance(): UserController {
-    if (this._instance == null) {
+    console.log('UserController#getInstance()')
+    if (!this._instance) {
       this._instance = new UserController()
     }
+    console.log('UserController: ', this._instance)
     return this._instance
   }
 
