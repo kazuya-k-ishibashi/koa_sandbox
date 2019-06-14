@@ -1,5 +1,5 @@
 import { Service } from 'typedi'
-import UserRepository from '@/repositories/users/user-repository'
+import UserRepository from '@/services/users/user-repository'
 
 
 @Service()
@@ -13,7 +13,7 @@ export default class MockUserService {
     return this.userRepository.findAll()
   }
 
-  findById(id: string) {
+  findById(id: number) {
     return this.userRepository.findById(id)
   }
 

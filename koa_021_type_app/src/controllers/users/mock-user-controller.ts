@@ -19,7 +19,7 @@ export default class MockUserController {
   }
 
   @Get('/:id')
-  findById(@Param('id') id: string) {
+  findById(@Param('id') id: number) {
     return this.userService.findById(id)
   }
 
