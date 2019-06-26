@@ -4,17 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "run-s build serve",
     "clean": "rimraf ./dist/*",
     "compile": "ttsc",
-    "build": "run-s clean compile",
+    "test": "ttsc -p tsconfig.test.json && ava --verbose",
+    "build": "run-s clean compile test",
     "serve": "node ./dist/bootstrap.js",
-    "test": "ava --verbose",
-    "watch:compile": "ttsc -w",
+    "start": "run-s build serve",
+    "watch:compile": "run-s \"compile -w\"",
+    "//watch:test": "run-s \"test -w\"",
     "watch:test": "ts-node ./test-watch.ts",
+    "watch:serve": "nodemon -L ./dist/bootstrap.js",
     "watch": "run-p watch:*",
-    "dev:serve": "nodemon -L ./dist/bootstrap.js",
-    "dev": "run-s build && run-p dev:serve watch",
+    "dev": "run-s build watch",
     "//dev": "ts-node-dev --compiler ttypescript --respawn ./src/bootstrap.ts"
   },
   "ava": {
@@ -23,9 +24,9 @@
     ],
     "compileEnhancements": false,
     "extensions": [
-      "ts"
+      "js"
     ],
-    "require": [
+    "//require": [
       "ts-node/register"
     ]
   },
