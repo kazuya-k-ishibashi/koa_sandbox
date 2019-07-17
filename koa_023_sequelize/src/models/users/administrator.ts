@@ -1,10 +1,9 @@
-import UserAccount from '@/models/users/user-account'
+import User from '@/models/users/user'
 
 
-export default class Administrator {
+export default class Administrator extends User {
 
-  Administrator(
-    private readonly userAccount: UserAccount) {
+  Administrator() {
   }
 
 }

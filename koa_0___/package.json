@@ -1,5 +1,5 @@
 {
-  "name": "koa_023_sequelize",
+  "name": "koa_021_type_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,9 +20,8 @@
     "koa-router": "^7.4.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.7.7",
-    "sequelize": "^5.8.8",
-    "sqlite3": "^4.0.8",
-    "typedi": "^0.8.0"
+    "typedi": "^0.8.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",
@@ -30,6 +29,7 @@
     "@types/koa-json": "^2.0.18",
     "@types/koa-multer": "^1.0.0",
     "@types/koa-router": "^7.0.40",
+    "@types/uuid": "^3.4.4",
     "ts-node": "^8.2.0",
     "ttypescript": "^1.5.6",
     "typescript": "^3.5.1",

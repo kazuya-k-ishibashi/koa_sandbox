@@ -1,5 +1,5 @@
 {
-  "name": "koa_023_sequelize",
+  "name": "koa_022_routing-controllers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ttsc",
     "start": "node ./dist/bootstrap.js",
-    "dev": "ts-node --compiler ttypescript ./src/bootstrap.ts"
+    "dev": "ts-node --compiler ttypescript src/bootstrap.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,20 +15,14 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-json": "^2.0.2",
     "koa-multer": "^1.0.2",
     "koa-router": "^7.4.0",
     "reflect-metadata": "^0.1.13",
-    "routing-controllers": "^0.7.7",
-    "sequelize": "^5.8.8",
-    "sqlite3": "^4.0.8",
-    "typedi": "^0.8.0"
+    "routing-controllers": "^0.7.7"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",
     "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-json": "^2.0.18",
-    "@types/koa-multer": "^1.0.0",
     "@types/koa-router": "^7.0.40",
     "ts-node": "^8.2.0",
     "ttypescript": "^1.5.6",
