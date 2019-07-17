@@ -12,8 +12,8 @@ router
   })
   .post('/', async (ctx, next) => {
     const { name, age } = ctx.request.body
-    register(""+name, +age)
-    ctx.body = findAll()
+    const id = register(""+name, +age)
+    ctx.body = { id }
   })
 
 
@@ -44,7 +44,9 @@ function findById(id) {
 
 function register(name, age) {
   const maxId = Math.max(...users.map(user => user.id))
-  users.push(new User(maxId + 1, name, age))
+  const user = new User(maxId + 1, name, age)
+  users.push(user)
+  return user.id
 }
 
 function update(id, name, age) {
