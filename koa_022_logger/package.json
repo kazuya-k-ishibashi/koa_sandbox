@@ -18,7 +18,7 @@
     "koa-json": "^2.0.2",
     "koa-multer": "^1.0.2",
     "koa-router": "^7.4.0",
-    "log4js": "^4.5.1",
+    "log4js": "^6.4.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.7.7",
     "typedi": "^0.8.0"
