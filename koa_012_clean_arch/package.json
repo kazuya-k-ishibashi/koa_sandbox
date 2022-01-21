@@ -16,7 +16,7 @@
     "koa-bodyparser": "^4.2.1",
     "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
-    "log4js": "^4.5.1"
+    "log4js": "^6.4.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.49",
